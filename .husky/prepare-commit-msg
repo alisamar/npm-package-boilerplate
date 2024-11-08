@@ -1,0 +1,6 @@
+eval "$(fnm env --use-on-cd)"
+
+which node
+node -v
+
+exec </dev/tty && node_modules/.bin/cz --hook || true
